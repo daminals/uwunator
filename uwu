@@ -1,0 +1,15 @@
+#!/bin/bash
+# uwunator
+# Daniel Kogan
+# 11/01/2020 
+
+
+cdir="$(dirname "$0")"
+cd "$(dirname "$0")"
+
+touch little_girls.txt
+
+for file in *;  do
+		echo "$file" 
+done
+
