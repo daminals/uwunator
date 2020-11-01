@@ -19,7 +19,7 @@ star_insert
 done
 for file in *.txt;  do
 		echo "$file" 
-		sed -i '' 's/u/uwu/g'  $file
-		sed -i '' "s/ /  /g" $file
+		#sed -i '' 's/u/uwu/g'  $file
+		sed -i '' "s/\ /$(star_insert)" $file
 done
 
