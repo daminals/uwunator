@@ -7,9 +7,16 @@
 cdir="$(dirname "$0")"
 cd "$(dirname "$0")"
 
-touch little_girls.txt
+star_insert() {
+		cringe=('*nuzzles you*' '*notices your bulge*' '*squirms*' '*licks lips*' '* wags tail*')
 
-for file in *;  do
+echo $(($RANDOM % 5))
+		}
+
+star_insert
+
+for file in *.txt;  do
 		echo "$file" 
+		sed -i '' 's/u/uwu/g'  $file
 done
 
