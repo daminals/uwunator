@@ -8,9 +8,10 @@ cdir="$(dirname "$0")"
 cd "$(dirname "$0")"
 
 star_insert() {
-		cringe=(' *nuzzles you* ' ' *notices your bulge* ' ' *squirms* ' ' *licks lips* ' ' *wags tail* ')
+		cringe=(' *nuzzles you* ' ' *notices your bulge* ' ' *squirms* ' ' *licks lips* ' ' *wags tail* '
+		 ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ')
 
-echo $(($RANDOM % 5))
+echo ${cringe[$(($RANDOM % 15))]}
 		}
 
 for i in {1..10}; do
@@ -19,5 +20,6 @@ done
 for file in *.txt;  do
 		echo "$file" 
 		sed -i '' 's/u/uwu/g'  $file
+		sed -i '' "s/ /  /g" $file
 done
 
